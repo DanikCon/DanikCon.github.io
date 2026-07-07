@@ -1,0 +1,11 @@
+{
+	"name": "Slither Arena — GamePush & Playgama v0.17",
+	"short_name": "Slither Arena — GamePush & Playgama v0.17",
+	"description": "Offline Slither-like arena with robust GamePush bootstrap in Yandex/VK/OK if hosted in an iframe, GamePush cloud saves/ads/permanent purchases; Playgama Bridge storage/rewarded-only skin unlocks.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#090d17",
+	"icons": [],
+	"screenshots": []
+}
