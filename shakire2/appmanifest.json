@@ -1,0 +1,11 @@
+{
+	"name": "snakeio",
+	"short_name": "snakeio",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#090d17",
+	"icons": [],
+	"screenshots": []
+}
