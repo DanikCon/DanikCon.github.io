@@ -1,0 +1,11 @@
+{
+  "name": "Snake Hyperdrive",
+  "short_name": "Hyperdrive",
+  "description": "",
+  "start_url": "index.html",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#0b0d22",
+  "icons": [],
+  "screenshots": []
+}
