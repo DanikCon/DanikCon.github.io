@@ -1,0 +1,12 @@
+{
+	"name": "Kosinka_GamePush_v1_26",
+	"short_name": "Kosinka_GamePush_v1_26",
+	"description": "klondikr",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#063629",
+	"icons": [],
+	"screenshots": [],
+	"theme_color": "#267960"
+}
