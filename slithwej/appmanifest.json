@@ -1,0 +1,11 @@
+{
+  "name": "Snake Neon Rush",
+  "short_name": "Neon Rush",
+  "description": "",
+  "start_url": "index.html",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#0d1029",
+  "icons": [],
+  "screenshots": []
+}

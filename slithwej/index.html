@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Snake Neon Rush</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover, interactive-widget=resizes-content">
+	
+	<!-- Made with Construct, the game and app creator :: https://www.construct.net -->
+	<meta name="generator" content="Scirra Construct">
+
+	<meta name="author" content="Reference Creation">
+
+	<link rel="manifest" href="appmanifest.json">
+
+
+	<link rel="stylesheet" href="style.css">
+
+	<script>
+	(() => {
+		const stopNativeUi = (event) => {
+			if (event.cancelable) event.preventDefault();
+		};
+
+		// Block browser UI that can appear over a touch game: text selection,
+		// the iOS long-press callout/loupe, image dragging and zoom gestures.
+		for (const type of ["contextmenu", "selectstart", "dragstart", "gesturestart", "gesturechange", "gestureend", "dblclick"]) {
+			document.addEventListener(type, stopNativeUi, { capture: true, passive: false });
+		}
+
+		const lockDraggableMedia = (scope = document) => {
+			for (const element of scope.querySelectorAll?.("img, canvas, svg") ?? []) {
+				element.draggable = false;
+				element.setAttribute("draggable", "false");
+			}
+		};
+
+		document.addEventListener("DOMContentLoaded", () => {
+			lockDraggableMedia();
+			new MutationObserver((records) => {
+				for (const record of records) {
+					for (const node of record.addedNodes) {
+						if (node.nodeType !== 1) continue;
+						if (node.matches?.("img, canvas, svg")) {
+							node.draggable = false;
+							node.setAttribute("draggable", "false");
+						}
+						lockDraggableMedia(node);
+					}
+				}
+			}).observe(document.documentElement, { childList: true, subtree: true });
+		}, { once: true });
+	})();
+	</script>
+
+
+
+</head> 
+ 
+<body>
+
+	
+
+<script>
+if (location.protocol.substr(0, 4) === "file")
+{
+	alert("Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)");
+}
+</script>
+	
+	<noscript>
+		<div id="notSupportedWrap">
+			<h2 id="notSupportedTitle">This content requires JavaScript</h2>
+			<p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
+		</div>
+	</noscript>
+	<script src="scripts/modernjscheck.js"></script>
+	<script src="scripts/supportcheck.js"></script>
+	<script src="scripts/offlineclient.js" type="module"></script>
+	<script src="scripts/main.js" type="module"></script>
+	<script src="scripts/register-sw.js" type="module"></script>
+
+</body> 
+</html>
