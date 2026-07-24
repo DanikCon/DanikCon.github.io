@@ -1,0 +1,12 @@
+{
+	"name": "Kosinka_GamePush_v1_26",
+	"short_name": "Kosinka_GamePush_v1_26",
+	"description": "Косынка: OK purchase live-entitlement — без перезапуска, Construct остаётся активным на время оплаты; deck_frost6/deck_amber6.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#063629",
+	"icons": [],
+	"screenshots": [],
+	"theme_color": "#267960"
+}
